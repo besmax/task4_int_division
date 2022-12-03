@@ -18,16 +18,7 @@ public class ConsoleImpl implements Console {
 
     public int read() {
         scan = new Scanner(System.in);
-        int result = 0;
-        try {
-            result = scan.nextInt();
-        } catch(Exception e) {
-            print("неверно введено число");
-        } finally {
-            scan.close();
-        }
-        return result;
-        
+        return scan.nextInt();        
     }
     
    
